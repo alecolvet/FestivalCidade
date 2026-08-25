@@ -32,5 +32,7 @@ class Program
         }
 
         double valorFinal = custoBruto - desconto;
+
+        bool acessoLoungeVip = quantidadeDias > 2 && pontuacao >= 500;
     }
 }
