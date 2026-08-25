@@ -34,5 +34,13 @@ class Program
         double valorFinal = custoBruto - desconto;
 
         bool acessoLoungeVip = quantidadeDias > 2 && pontuacao >= 500;
+
+        Console.WriteLine();
+        Console.WriteLine("=== RESUMO DA COMPRA ===");
+        Console.WriteLine($"Fã: {nomeFa.ToUpper()}");
+        Console.WriteLine($"Valor bruto: R$ {custoBruto:F2}");
+        Console.WriteLine($"Desconto: R$ {desconto:F2}");
+        Console.WriteLine($"Valor final: R$ {valorFinal:F2}");
+        Console.WriteLine($"Acesso ao Lounge VIP: {acessoLoungeVip}");
     }
 }
