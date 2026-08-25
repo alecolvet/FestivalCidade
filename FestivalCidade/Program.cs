@@ -19,5 +19,10 @@ class Program
 
         Console.Write("Digite a pontuação do clube de fidelidade: ");
         int pontuacao = int.Parse(Console.ReadLine() ?? "0");
+
+        double taxaServico = 15.00;
+        double valorPorDia = 120.00;
+
+        double custoBruto = taxaServico + (quantidadeDias * valorPorDia);
     }
 }
