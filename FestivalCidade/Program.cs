@@ -24,5 +24,13 @@ class Program
         double valorPorDia = 120.00;
 
         double custoBruto = taxaServico + (quantidadeDias * valorPorDia);
+        double desconto = 0;
+
+        if (cupom.Equals("ROCK10", StringComparison.OrdinalIgnoreCase))
+        {
+            desconto = custoBruto * 0.10;
+        }
+
+        double valorFinal = custoBruto - desconto;
     }
 }
